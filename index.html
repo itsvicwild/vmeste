@@ -700,6 +700,19 @@ body{position:fixed;inset:0;width:100%;}
 .agreement-success-mark{display:grid;place-items:center;width:40px;height:40px;margin:3px auto 8px;border-radius:50%;background:#E8F3E9;color:#43804F;font-size:22px;font-weight:700}
 .agreement-done .agreement-tip{text-align:left}
 .emergency-box .extra-crisis{margin-top:8px!important}
+
+/* PHONES ONLY: the app prototype slide shows the app full screen, without the device frame.
+   Desktop, tablets and all other slides are not affected. */
+@media (max-width:600px){
+  .demo-slide{padding:0!important;align-items:stretch;justify-content:stretch}
+  .demo-slide>.in{max-width:none;width:100%;height:100%;margin:0;transform:none!important;will-change:auto}
+  .demo-slide .split{display:block;height:100%}
+  .demo-slide .demo-copy{display:none}
+  .demo-slide .phone{--fs:clamp(15px,4.4vw,18px);width:100%;max-width:none;height:100%;margin:0;border:0;border-radius:0;box-shadow:none}
+  .demo-slide .sbar{display:none}
+  /* keep the slide controls visible so the viewer can leave the app slide */
+  .app.demo-mode .nav{display:flex}
+}
 </style>
 </head>
 <body>
