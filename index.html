@@ -634,8 +634,8 @@ body{position:fixed;inset:0;width:100%;}
   .demo-slide > .in { max-width: 1840px; }
   .demo-slide .split {
     display: grid;
-    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-    gap: clamp(42px, 3.5vw, 76px);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(32px, 3vw, 64px);
     align-items: center;
     width: 100%;
   }
@@ -663,7 +663,7 @@ body{position:fixed;inset:0;width:100%;}
   .demo-points .mt { min-height:94px; padding:16px 20px; gap:13px; font-size:clamp(19px,1.2vw,25px); border:1px solid rgba(103,80,164,.08); }
   .demo-points .mt:last-child { grid-column:1 / -1; }
   .demo-points .mt > span { font-size:34px; }
-  .demo-slide .phone { --ph: min(1240px, calc(100dvh - 150px)); width:min(35vw, 740px); height:var(--ph); border-width:13px; border-radius:50px; }
+  .demo-slide .phone { --ph: min(1400px, calc(100dvh - 120px)); --fs: calc(var(--ph) / 36); width:min(calc(var(--ph) * .82), 46vw); height:var(--ph); border-width:13px; border-radius:50px; }
   .demo-slide .sbar { padding:8px 20px 0; }
   .demo-slide .scr { padding:14px 18px 18px; }
   .demo-slide .tabs { padding:8px 4px; }
